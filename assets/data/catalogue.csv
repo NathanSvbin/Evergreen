@@ -1,0 +1,3 @@
+id,titre,date,lien,img,description
+1,Literatura,2026-10-12,https://ok.ru/video/1547088038481,"https://iv.okcdn.ru/videoPreview?id=475918436945&type=37&idx=3&tkn=bd6pJOkT27tvKoNoNuJFvFGo6dY&fn=external_8","Exemple de ligne du catalogue. Plusieurs liens possibles dans la colonne lien, séparés par | ou un retour à la ligne."
+2,Entresombritas,2026-10-15,https://ok.ru/video/1530574146129,"https://iv.okcdn.ru/videoPreview?id=471124871761&type=38&idx=8&tkn=Hn5d3rsrhDw_vK9VruAf61YU6Jw&fn=external_8","Deuxième exemple. La date peut être au format 2026-10-15, 15/10/2026 ou juste une année."

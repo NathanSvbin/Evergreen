@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="./assets/img/icone.ico" sizes="any">
+<title>Evergreen</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav id="nav">
+  <span class="logo">Evergreen</span>
+  <button class="nl" id="nHome">Accueil</button>
+  <button class="nl" id="nCat">Catalogue</button>
+  <span class="sp"></span>
+  <button class="nl" id="nSearch" aria-label="Rechercher">🔍</button>
+</nav>
+
+<header class="hero" id="hero">
+  <img class="hb on" id="hbA" alt="" referrerpolicy="no-referrer">
+  <img class="hb" id="hbB" alt="" referrerpolicy="no-referrer">
+  <img class="hp" id="hPoster" alt="" referrerpolicy="no-referrer" hidden>
+  <div class="hi">
+    <span class="tag" id="hTag">À LA UNE</span>
+    <h1 id="hTitle">Chargement…</h1>
+    <p id="hDesc"></p>
+    <div class="btns">
+      <button class="b" id="hPlay">▶ Lecture</button>
+      <button class="b g" id="hInfo">ⓘ Plus d’infos</button>
+    </div>
+  </div>
+</header>
+<main id="rows"></main>
+<footer>Evergreen · <span id="total">0</span> titres</footer>
+
+<!-- Catalogue en overlay -->
+<section class="ov" id="catalog" aria-label="Catalogue">
+  <div class="ch">
+    <div><h1>Catalogue</h1><p class="cnt" id="cCount"></p></div>
+    <button class="x" data-close aria-label="Fermer">×</button>
+  </div>
+  <div class="tb">
+    <input type="search" id="cSearch" placeholder="Rechercher un titre…" autocomplete="off">
+    <select id="cSort">
+      <option value="az">Titre A → Z</option><option value="za">Titre Z → A</option>
+      <option value="new">Plus récent</option><option value="old">Plus ancien</option>
+    </select>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div id="sentinel" style="height:40px"></div>
+  <p class="msg" id="cNone" hidden>Aucun résultat.</p>
+</section>
+
+<!-- Fiche en overlay -->
+<div class="ov" id="bd">
+  <div class="modal">
+    <button class="x" data-close aria-label="Fermer">×</button>
+    <img class="mp" id="mPoster" alt="" referrerpolicy="no-referrer">
+    <div class="mi">
+      <h2 id="mTitle"></h2>
+      <div class="meta" id="mMeta"></div>
+      <p id="mDesc"></p>
+      <div class="btns"><button class="b" id="mPlay">▶ Lecture</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Lecteur en overlay -->
+<div class="ov" id="player">
+  <div class="pt">
+    <strong id="pTitle"></strong>
+    <span id="pSrc"></span>
+    <button class="x" data-close aria-label="Fermer">×</button>
+  </div>
+  <div id="stage"></div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
